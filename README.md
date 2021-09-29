@@ -50,9 +50,9 @@ use [Trello](https://trello.com/).*
 
 ## Project statistics
 
-[![wakatime](https://wakatime.com/badge/github/VitasSalvantes/ComposeLayoutsCodelab.svg)](https://wakatime.com/badge/github/VitasSalvantes/ComposeLayoutsCodelab)
+[![wakatime](https://wakatime.com/badge/github/VitasSalvantes/StateCodelab.svg)](https://wakatime.com/badge/github/VitasSalvantes/StateCodelab)
 
-See more on [WakaTime](https://wakatime.com/@VitasSalvantes/projects/hqltidofbq).
+See more on [WakaTime](https://wakatime.com/@VitasSalvantes/projects/geqzrzrivg).
 
 ## How to install
 
