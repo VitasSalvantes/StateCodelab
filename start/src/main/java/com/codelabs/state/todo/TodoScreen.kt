@@ -117,15 +117,17 @@ private fun randomTint(): Float {
     return Random.nextFloat().coerceIn(0.3f, 0.9f)
 }
 
+// TodoInputTextField with hoisted state
 @Composable
-fun TodoInputTextField(modifier: Modifier) {
-    val (text, setText) = remember { mutableStateOf("") }
+fun TodoInputTextField(text: String, onTextChange: (String) -> Unit, modifier: Modifier) {
 
-    TodoInputText(text = text, onTextChange = setText, modifier = modifier)
+    TodoInputText(text = text, onTextChange = onTextChange, modifier = modifier)
 }
 
 @Composable
 fun TodoItemInput(onItemComplete: (TodoItem) -> Unit) {
+    val (text, setText) = remember { mutableStateOf("") }
+
     // onItemComplete is an event will fire when an item is completed by the user
     Column {
         Row(
@@ -134,12 +136,17 @@ fun TodoItemInput(onItemComplete: (TodoItem) -> Unit) {
                 .padding(top = 16.dp)
         ) {
             TodoInputTextField(
+                text, setText,
                 Modifier
                     .weight(1f)
                     .padding(end = 8.dp)
             )
+            // Edit TodoItemInput
             TodoEditButton(
-                onClick = { /* todo */ },
+                onClick = {
+                    onItemComplete(TodoItem(text))  // send onItemComplete event up
+                    setText("")                     // clear the internal text
+                },
                 text = "Add",
                 modifier = Modifier.align(Alignment.CenterVertically)
             )
