@@ -45,6 +45,7 @@ class TodoViewModel : ViewModel() {
     // Event: removeItem
     fun removeItem(item: TodoItem) {
         todoItems.remove(item)
+        onEditDone() // don't keep the editor open when removing items
     }
 
     // event: onEditItemSelected
