@@ -2,7 +2,7 @@
 
 [![current version](https://img.shields.io/badge/current_version-1.0-green)](#ComposeCodelab)
 
-This is a simple todo app for Android that was created as part
+This is a simple to-do app for Android that was created as part
 of [Jetpack Compose pathway](https://developer.android.com/courses/pathways/compose) by Google.
 
 ## Table of contents
@@ -17,7 +17,7 @@ of [Jetpack Compose pathway](https://developer.android.com/courses/pathways/comp
 
 ## How does it work
 
-The user opens the app, creates a todo, and edits or deletes it.
+The user opens the app, creates a to-do, and edits or deletes it.
 
 ## Screenshots
 
