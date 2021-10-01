@@ -16,27 +16,33 @@
 
 package com.codelabs.state.todo
 
+import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class TodoViewModel : ViewModel() {
 
-    // state: todoItems
+    // State: todoItems
     var todoItems = mutableStateListOf<TodoItem>()
-    private set
+        private set
 
-    var userName = mutableStateOf(1)
+    // Private state
+    private var currentEditPosition by mutableStateOf(-1)
 
-    // event: addItem
+    // State
+    val currentEditItem: TodoItem?
+        get() = todoItems.getOrNull(currentEditPosition)
+
+    // Event: addItem
     fun addItem(item: TodoItem) {
         todoItems.add(item)
-        userName.value++
     }
 
-    // event: removeItem
+    // Event: removeItem
     fun removeItem(item: TodoItem) {
         todoItems.remove(item)
     }
