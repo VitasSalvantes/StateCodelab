@@ -2,7 +2,7 @@
 
 [![current version](https://img.shields.io/badge/current_version-1.0-green)](#ComposeCodelab)
 
-This is a simple app for Android that was created as part
+This is a simple todo app for Android that was created as part
 of [Jetpack Compose pathway](https://developer.android.com/courses/pathways/compose) by Google.
 
 ## Table of contents
@@ -17,7 +17,7 @@ of [Jetpack Compose pathway](https://developer.android.com/courses/pathways/comp
 
 ## How does it work
 
-...
+The user opens the app, creates a todo, and edits or deletes it.
 
 ## Screenshots
 
@@ -25,7 +25,7 @@ of [Jetpack Compose pathway](https://developer.android.com/courses/pathways/comp
 
 At the beginning:
 
-<img src="screenshots/screenshot_start.png" alt="screenshot_start" style="width:231px;height:500px;">
+<img src="screenshots/state_movie.gif" alt="state_movie" style="width:231px;height:500px;">
 
 ## Technologies
 
@@ -43,7 +43,7 @@ At the beginning:
 
 ## Development progress
 
-Development of the project began and completed on **September 29, 2021**.
+Development of the project began on **September 29, 2021** and completed on **October 1, 2021**.
 
 *Since I am developing this project mainly alone, I see no reason to
 use [Trello](https://trello.com/).*
